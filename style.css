@@ -4,6 +4,12 @@ body {
     font-family: 'Graphik', sans-serif;
 }
 
+.black-bg {
+    background-color: black;
+}
+
+/* Hero Section */
+
 .hero {
     background-image: url('/images/hero-img.jpeg');
     background-size: cover;
@@ -36,7 +42,7 @@ body {
     border-radius: 8px;
 }
 
-/* Hero Section */
+/* Hero Body */
 
 .hero-section {
     margin: 120px 0;
@@ -109,8 +115,9 @@ body {
 .content {
     height: 100vh;
     padding: 10px 0 150px 0;
-    background-color: black;
 }
+
+/* Content Body */
 
 .content-header {
     margin: 80px 0 60px 0;
@@ -135,6 +142,8 @@ body {
     font-size: 18px;
     margin-bottom: 0;
 }
+
+/* Content Listing */
 
 .content-list {
     display: flex;
@@ -188,4 +197,69 @@ body {
     color: rgb(149, 147, 147);
     margin: 20px 150px 0 0;
     font-size: 10px;
+}
+
+/* Live TV Section */
+
+.live-tv {
+    height: 60vh;
+    padding: 10px 0 150px 0;
+    text-align: center;
+    color: white;
+}
+
+.live-tv-container {
+    margin-top: 100px;
+}
+
+.live-tv-info {
+    color: #00ED82;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.live-tv-title {
+    font-weight: 600;
+    font-size: 48px;
+    margin-top: 5px;
+}
+
+.live-tv-description {
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.live-tv-bottom-info {
+    font-size: 10px;
+    color: rgb(185, 185, 185);
+    line-height: 15px;
+}
+
+.live-tv-link {
+    color: rgb(185, 185, 185);
+    margin-top: 10px;
+    font-weight: 600;
+    display: block;
+}
+
+@keyframes jumpInfinite {
+    0% {
+        margin-top: 50px;
+    }
+
+    50% {
+        margin-top: 60px;
+    }
+
+    100% {
+        margin-top: 50px;
+    }
+}
+
+.down-arrow {
+    animation: jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:hover {
+    cursor: pointer;
 }
